@@ -1,0 +1,21 @@
+{
+  "name": "resumeseeker",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @resumeseeker/web",
+    "build": "npm run build --workspace @resumeseeker/shared && npm run build --workspace @resumeseeker/web && npm run build --workspace @resumeseeker/extension",
+    "lint": "npm run lint --workspace @resumeseeker/web",
+    "typecheck": "npm run typecheck --workspace @resumeseeker/shared && npm run typecheck --workspace @resumeseeker/web && npm run typecheck --workspace @resumeseeker/extension"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "typescript": "^5.8.3"
+  }
+}

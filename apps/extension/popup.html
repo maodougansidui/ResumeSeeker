@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResumeSeeker</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <section>
+        <h1>ResumeSeeker</h1>
+        <p>Connect the current ATS tab to a queued execution session.</p>
+      </section>
+
+      <label>
+        <span>Web app API</span>
+        <input id="apiBaseUrl" value="http://localhost:3000" />
+      </label>
+
+      <label>
+        <span>Execution session ID</span>
+        <input id="sessionId" placeholder="session_xxxxxxxx" />
+      </label>
+
+      <div class="actions">
+        <button id="analyzeButton" class="secondary">Analyze tab</button>
+        <button id="fillButton" class="primary">Autofill current job</button>
+      </div>
+
+      <pre id="status">Waiting for input.</pre>
+    </main>
+    <script type="module" src="./dist/popup.js"></script>
+  </body>
+  </html>

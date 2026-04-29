@@ -1,0 +1,68 @@
+{
+  "profile": {
+    "fullName": "Avery Chen",
+    "preferredName": "Avery",
+    "email": "avery.chen@example.com",
+    "phone": "+1 415 555 0199",
+    "location": "San Francisco, CA, USA",
+    "linkedinUrl": "https://www.linkedin.com/in/avery-chen",
+    "portfolioUrl": "https://averychen.dev",
+    "githubUrl": "https://github.com/averychen",
+    "summary": "Product-minded full-stack engineer with 6 years of experience shipping SaaS workflows and internal automation.",
+    "workAuthorization": {
+      "country": "United States",
+      "authorized": true,
+      "requiresSponsorship": false
+    },
+    "documents": {
+      "resumeFileName": "avery-chen-resume.pdf",
+      "coverLetterFileName": ""
+    },
+    "screeningAnswers": {
+      "eligibleToWork": "Yes",
+      "requiresVisaSponsorship": "No",
+      "willingToRelocate": "Yes"
+    },
+    "experiences": [
+      {
+        "company": "Northstar Labs",
+        "title": "Senior Software Engineer",
+        "startDate": "2022-02",
+        "endDate": "",
+        "highlights": [
+          "Built workflow tooling used by 2,000+ internal operators.",
+          "Led migration to typed APIs and component-driven frontend architecture."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "University of Washington",
+        "degree": "B.S. Computer Science",
+        "startDate": "2014-09",
+        "endDate": "2018-06"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "id": "job_greenhouse_demo",
+      "url": "https://boards.greenhouse.io/example/jobs/1234567",
+      "company": "Example",
+      "role": "Full Stack Engineer",
+      "location": "Remote",
+      "atsType": "greenhouse",
+      "status": "ready"
+    },
+    {
+      "id": "job_lever_demo",
+      "url": "https://jobs.lever.co/example/abcdef01-2345-6789-abcd-ef0123456789",
+      "company": "Example",
+      "role": "Platform Engineer",
+      "location": "New York, NY",
+      "atsType": "lever",
+      "status": "needs_review"
+    }
+  ],
+  "executionSessions": []
+}

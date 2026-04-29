@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "ResumeSeeker",
+  "version": "0.1.0",
+  "description": "Assist targeted ATS applications by filling supported forms from ResumeSeeker sessions.",
+  "permissions": ["activeTab", "storage", "tabs"],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "https://boards.greenhouse.io/*",
+    "https://jobs.lever.co/*",
+    "https://*.workdayjobs.com/*",
+    "https://*.myworkdayjobs.com/*"
+  ],
+  "action": {
+    "default_title": "ResumeSeeker",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://boards.greenhouse.io/*",
+        "https://jobs.lever.co/*",
+        "https://*.workdayjobs.com/*",
+        "https://*.myworkdayjobs.com/*"
+      ],
+      "js": ["dist/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
